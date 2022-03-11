@@ -15,10 +15,10 @@ public class RandomNumberMain {
 
 	public static void main(String[] args) 
 	{
-		int[] randomNumber = numberGenerator(100, 20, 10000);
+		int[] randomNumber = numberGenerator(1000000, 0, 1000000);
 		writeFile( "RandomNumber.txt", randomNumber );
 		
-		QuickSort sortNumberImpl = new QuickSort();
+		SortNumber sortNumberImpl = new QuickSort();
 		sortNumberImpl.sort(randomNumber);
 		
 		//Arrays provides sort function, easy to use for less amount data
